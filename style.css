@@ -1,0 +1,528 @@
+/* 
+Theme Name: openmindtutoring
+Author: Jacob Spade
+Version: 1.0
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0px;
+}
+
+a:link,
+a:visited {
+    color: #333;
+}
+
+p {
+    line-height: 1.65;
+}
+
+/* General Layout */
+div.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.container-1 {
+  background-color: #fff;
+  z-index: 10;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 30px;
+}
+
+/* Navigation Menus */
+.primary-nav {
+  position: fixed;
+  width: 100%;
+  box-shadow: 2px 8px 15px rgba(0, 0, 0, .1);
+}
+
+.site-nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.site-nav ul li {
+  list-style: none;
+  font-size: 1em;
+}
+
+/* Site Header Menu */
+.container-header {
+  display: flex;
+  flex-direction: row;
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container-header > .box-1 {
+  display: flex;
+  flex-direction: row;
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+  justify-content: flex-start;
+  margin-left: 0px;
+  margin-top: 4px;
+}
+
+/* Header Phone Number */
+.header-phone {
+  margin-right: .5em;
+}
+
+.phone-number {
+  border-left: 1px solid black;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* hamburger */
+.fa-bars {
+  display: none;
+}
+
+/* Drop down menu */
+.drop-down-menu {
+  box-shadow: 1px 1px 10px 1px #333;
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 91px;
+  background-color: white;
+}
+
+.drop-down-menu li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 1em 2em;
+}
+
+.drop-down-menu li:hover {
+  background-color: #FEECCA;
+}
+
+.drop-down-menu li a {
+  text-decoration: none;
+}
+
+.primary-header-menu li a:link,
+.primary-header-menu li a:visited {
+  display: block;
+  padding: 2em 1em;
+  text-decoration: none;
+}
+
+.primary-header-menu li.current-menu-item a:link,
+.primary-header-menu li.current-menu-item a:visited {
+  background-color: #333;
+  color: white;
+}
+
+.primary-header-menu li a:hover {
+  background-color: #FEECCA;
+}
+
+/*********** BANNER ***********/
+
+.overlay {
+  position: absolute;
+  top: 32px;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.slideshow-container {
+  width: 100%;
+  margin: 0 auto;
+  top: 80px;
+  padding-top: 80.3px;
+  background-attachment: fixed;
+}
+
+.mySlides {
+  width: 100%;
+  height: 420px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #BBB;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.dots-container {
+  text-align: center;
+  z-index: 1000;
+  background-color: #333;
+  padding: 5px 0;
+}
+
+.dots {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-color: #BBB;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/********************************************/
+
+/* side menu */
+.side-menu {
+  display: none;
+}
+
+/* main content */
+
+article.page {
+  z-index: 500;
+}
+
+/* page title */
+.page-title {
+  text-align: center;
+  font-size: 4em;
+}
+
+/* Footer */
+.footer-container {
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+/* Footer Contact Info */
+.footer-contact-info {
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.footer-phone {
+  margin-bottom: .5em;
+}
+
+.footer-phone,
+.footer-email {
+  margin-right: .5em;
+}
+
+.site-footer {
+  background-color: #333;
+  color: #BBB;
+}
+
+/* Footer Menu */
+.site-footer nav ul li {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-right: 1px dotted #BBB;
+}
+
+.footer-site-nav ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.footer-site-nav ul li {
+  list-style: none;
+  font-size: 12px;
+}
+
+.footer-site-nav ul li a {
+  text-decoration: none;
+  color: #BBB;
+  padding-right: 1em;
+}
+
+/* footer social media */
+.footer-box2 {
+  text-align: end;
+  padding-top: 1em;
+}
+
+.footer-box4 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.fab {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-social {
+  list-style: none;
+  margin-left: 1em;
+  padding: .3em;
+  border-radius: 4px;
+}
+
+.twitter {
+  background-color: #38A1F3;
+  transition-duration: .2s;
+  padding-right: .4em;
+  padding-left: .4em;
+}
+
+.twitter:hover {
+   background-color: #0d7fd8;
+   transform: translate(0, -.3em);
+}
+
+.facebook {
+  background-color: #3b5998;
+  padding-right: .65em;
+  padding-left: .65em;
+  transition-duration: .2s;
+}
+
+.facebook:hover {
+  background-color: #324b81;
+  transform: translate(0, -.3em);
+}
+
+.linkedin {
+  background-color: #0e76a8;
+  padding-right: .5em;
+  padding-left: .5em;
+  transition-duration: .2s;
+}
+
+.linkedin:hover {
+  background-color: #0a5376;
+  transform: translate(0, -.3em);
+}
+
+.instagram {
+  background-color: #DD2A7B;
+  padding-right: .5em;
+  padding-left: .5em;
+  transition-property: all;
+  transition-duration: .2s;
+}
+
+.instagram:hover {
+  background-color: #c6206b;
+  transform: translate(0, -.3em);
+}
+
+/* copyright */
+.footer-box3 p {
+  padding-top: 1em;
+  font-size: 12px;
+}
+
+/* Page Layout */
+article.page h2 {
+  font-size: 300%;
+}
+
+/* Tutors */
+.tutor-post {
+  display: flex;
+  margin-top: 3em;
+}
+
+.tutor-photo {
+  flex: 1;
+  margin-right: 2em;
+}
+
+.tutor-content {
+  flex: 3;
+}
+
+body > div.container > article > div > * {
+  margin-bottom: 2em;
+}
+
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+
+  div.container,
+  .container-header {
+    width: 90%;
+  }
+
+  /* navbar */
+  .container-header .box-1,
+  .container-header .box-2,
+  .container-header .phone-number {
+    display: none;
+  }
+
+  .container-header {
+    height: 114px;
+  }
+
+  /* hamburger */
+  .fa-bars {
+    display: block;
+    font-size: 3.5em;
+    padding: .7em;
+    padding-right: 0px;
+    cursor: pointer;
+  }
+
+  /* Side Menu */
+  .side-menu-close {
+    text-align: right;
+  }
+
+  .fa-times {
+    font-size: 2em;
+    padding: 1em;
+  }
+
+  .fa-times:hover {
+    cursor: pointer;
+  }
+
+  .side-menu {
+    position: fixed;
+    top: 46px;
+    z-index: 100;
+    background-color: #ECECEC;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: none;
+  }
+
+  .side-menu li {
+    padding: 1em;
+    list-style: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-bottom: 1px solid #fefefe;
+  }
+
+  .side-menu ul:first-child {
+    border-top: 1px solid #fefefe;
+  }
+
+  .side-menu li:hover {
+    background-color: #333;
+    color: #fefefe;
+  }
+
+  .side-menu li:hover a {
+    color: #fefefe;
+  }
+
+  .side-menu li a {
+    text-decoration: none;
+  }
+
+  .banner-image {
+    background-attachment: scroll;
+  }
+
+  .tutor-post {
+    display: block;
+  }
+
+  .tutor-photo {
+    text-align: center;
+  }
+  
+  .tutor-content {
+    margin-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .tutor-content h2 {
+    text-align: center;
+  }
+
+  .tutor-content p {
+    margin-top: 2em;
+  }
+
+  /* Footer */
+  .footer-container {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+
+  .footer-social-list {
+    justify-content: start;
+  }
+
+  ul.footer-social-list li:first-child {
+    margin-left: 0px;
+  }
+
+  #menu-footer-menu-links {
+    /* text-align: center; */
+    justify-content: start;
+  }
+
+  .footer-box4 {
+    padding-top: 0px;
+  }
+
+  /* footer menu links */
+  #menu-footer-menu-links:first-child {
+    border-left: 1px dotted #BBB;
+  }
+
+}
