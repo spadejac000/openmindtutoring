@@ -3,6 +3,7 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -51,23 +52,33 @@
           <div class="phone-number"><i class="fas fa-phone header-phone"></i>(555) 555-5555</div>
         </div>
       </nav>
-      <div class="slideshow-container">
+      <?php if( is_page(14)) { ?>
+        <div class="slideshow-container">
         
-        <img src="https://www.thoughtco.com/thmb/45XWafEdDpIzg4Ze9943GM7fMi4=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-187244393-5a980ce743a1030037ba389f.jpg" class="mySlides fade"/>
+          <img src="http://ss.marin.edu/sites/ss/files/TLC.jpg" class="mySlides fade"/>
 
-        <img src="https://cdn.uwec.edu/athena/images/6426/20150401_cob_tutors_0060-homepage.jpg" class="mySlides fade"/>
+          <img src="https://cdn.uwec.edu/athena/images/6426/20150401_cob_tutors_0060-homepage.jpg" class="mySlides fade"/>
 
-        <img src="http://www.tutordoctor.com/images/blog/Tutor-helping-teen-girl-student.jpg" class="mySlides fade"/>
+          <img src="https://lowercolumbia.edu/tutoring/_assets/images/tutoring_center.jpg" class="mySlides fade"/>
 
-        <div class="overlay"></div>
+          <div class="tagline">
+            <h1>Helping You Invest In Your Future</h1>
+          </div>
 
-        <div class="dots-container">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <div class="banner-button-div">
+            <button  class="banner-button">CONTACT US</button>
+          </div>
+          
+          <div class="overlay"></div>
+
+          <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
         </div>
-
-      </div>
+      <?php } ?>
 
       <div class="side-menu">
         <div class="side-menu-close">
@@ -77,4 +88,4 @@
       </div>
       
     </header><!-- /site -->
-    <div class="container">
+    <div class="container body-container">

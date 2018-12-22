@@ -3,24 +3,22 @@
 get_header(); ?>
 
 <article class="post page">
-
-  <h1 class="page-title">Tutors</h1>
   
   <?php
     if(have_posts()) :
       while(have_posts()) : the_post(); ?>
 
-        <div class="tutor-post">
-            <div class="tutor-photo">
-                <?php the_post_thumbnail('small-thumbnail') ?>
-            </div>
-            <div class="tutor-content">
-                <h2><?php the_title(); ?></h2>
-                <p class="tutor-info"><?php the_content(); ?></p>
-            </div>
+        <div class="whole-tutor-post">
+          <h2 class="tutor-name"><?php the_title(); ?></h2>
+          <div class="tutor-post">
+              <div class="tutor-photo">
+                  <?php the_post_thumbnail('small-thumbnail') ?>
+              </div>
+              <div class="tutor-content">
+                  <p class="tutor-info"><?php the_content(); ?></p>
+              </div>
+          </div>
         </div>
-
-        <hr />
 
       <?php endwhile;
 

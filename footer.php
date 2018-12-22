@@ -33,6 +33,7 @@
     </div>
   </div>
 </footer>
+<p class="jacob">Created By Jacob Spade</p>
 
 <?php wp_footer(); ?>
 </body>

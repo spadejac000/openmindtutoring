@@ -16,6 +16,19 @@ body {
     margin: 0px;
 }
 
+/* .page-id-18,
+.category-tutors {
+  background: url('http://optutoring.com/wp-content/uploads/2013/04/graphic-connect1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.page-id-18,
+.category-tutors {
+  background-color: #f4f6f9;
+}
+
 a:link,
 a:visited {
     color: #333;
@@ -31,6 +44,10 @@ div.container {
   margin: 0 auto;
 }
 
+.body-container {
+  padding-top: 82px;
+}
+
 .container-1 {
   background-color: #fff;
   z-index: 10;
@@ -41,7 +58,7 @@ div.container {
   margin-top: 30px;
 }
 
-/* Navigation Menus */
+/********** Navigation Menus **********/
 .primary-nav {
   position: fixed;
   width: 100%;
@@ -107,7 +124,7 @@ div.container {
   display: none;
   z-index: 100;
   position: absolute;
-  top: 91px;
+  top: 82.4px;
   background-color: white;
 }
 
@@ -139,18 +156,64 @@ div.container {
   color: white;
 }
 
-.primary-header-menu li a:hover {
-  background-color: #FEECCA;
+.primary-header-menu li a {
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, #FEECCA 50%, transparent 50%);
+  transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+}
+
+.primary-header-menu li a:hover,
+.banner-button:hover {
+  background-position: 0 100%;
+  transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
 }
 
 /*********** BANNER ***********/
 
 .overlay {
   position: absolute;
-  top: 32px;
+  top: 0px;
   width: 100%;
   height: 500px;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.tagline {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  top: 40%; left: 0; bottom: 0; right: 0;
+  font-family: 'Charm', cursive;
+  font-size: 2em;
+  text-align: center;
+}
+
+.banner-button-div {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  top: 60%; left: 0; bottom: 0; right: 0;
+  font-family: 'Charm', cursive;
+  font-size: 1em;
+  text-align: center;
+}
+
+.banner-button {
+  padding: .5em;
+  background-color: transparent;
+  border: 2px solid white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  background-size: 200% 200%;
+  background-image: linear-gradient(to top, #FEECCA 50%, transparent 50%);
+  transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+}
+
+.banner-button:hover {
+  color: #333;
+  border-color: #333;
 }
 
 .slideshow-container {
@@ -227,6 +290,109 @@ article.page {
   font-size: 4em;
 }
 
+h1.page-title {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.page-id-18 h2 {
+  background-color: #FEECCA;
+  width: 400px;
+  margin: 25px auto 0 auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  padding-top: 25px;
+}
+
+.mission-statement-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.mission-statement,
+.philosophy {
+  padding: 25px;
+  text-align: center;
+}
+
+.mission-statement p {
+  font-style: italic;
+}
+
+.philosophy {
+  background-color: #FEECCA;
+}
+
+.philosophy-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 2em;
+}
+
+.philosophy p {
+  text-align: left;
+  margin-bottom: .5em;
+}
+
+.philosophy-title {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 46px;
+  font-family: "Raleway", sans-serif;
+}
+
+/* subjects */
+.subject-title {
+  text-align: center;
+  margin-bottom: 64px;
+  font-size: 46px;
+  font-family: "Raleway", sans-serif;
+}
+
+.subjects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.math-box,
+.english-box,
+.social-sciences-box,
+.science-box,
+.test-prep-box,
+.foreign-languages-box {
+  background-color: #FEECCA;
+  /* margin: 1em; */
+  text-align: center;
+}
+
+.math-box img,
+.english-box img,
+.social-sciences-box img,
+.science-box img,
+.test-prep-box img,
+.foreign-languages-box img {
+  height: 215px;
+}
+
+.math-box ul,
+.english-box ul,
+.social-sciences-box ul,
+.science-box ul,
+.test-prep-box ul,
+.foreign-languages-box ul {
+  padding: 1em 0;
+}
+
+.subjects ul li {
+  list-style: none;
+}
+
 /* Footer */
 .footer-container {
   padding-top: 1em;
@@ -293,7 +459,7 @@ article.page {
 
 .fab {
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .footer-social-list {
@@ -369,21 +535,30 @@ article.page h2 {
 }
 
 /* Tutors */
+.whole-tutor-post {
+  background-color: #FEECCA;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 1em;
+}
+
+.category-tutors article:first-child {
+  margin-top: 2em;
+}
+
 .tutor-post {
   display: flex;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 .tutor-photo {
   flex: 1;
-  margin-right: 2em;
 }
 
 .tutor-content {
   flex: 3;
 }
 
-body > div.container > article > div > * {
+body > div.container > article > div {
   margin-bottom: 2em;
 }
 
@@ -391,6 +566,13 @@ body > div.container > article > div > * {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.jacob {
+  background-color: black;
+  color: #fff;
+  font-size: 8px;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
